@@ -1,17 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>you're invited to</h1> 
+  <p> <strong> suffer </p>
+
+<button onclick="myFunction()">join</button>
+
 <script>
-const headers = new Headers()
-headers.append("Content-Type", "application/json")
+function myFunction() {
+  const headers = new Headers()
+  headers.append("Content-Type", "application/json")
 
-const body = {"name":"Han Solo"}
+  const body = {"name":"Han Solo"}
 
-const options = {
-  method: "GET",
-  headers,
-  body: JSON.stringify(body),
-}
+  const options = {
+     method: "GET",
+     headers,
+     body: JSON.stringify(body),
+  }
 
-function requestData() {
   fetch("https://enpe1bizstfc29l.m.pipedream.net", options)
+
 }
 </script>
-<button onclick="requestData()">zoinks</button>
+
+</body>
+</html>
